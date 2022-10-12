@@ -174,8 +174,8 @@ local theme = lush(function()
     LineNr {fg = gray}, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
     CursorLineNr {fg = black, gui = bold_strings}, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     MatchParen {fg = cyan, gui = "underline"}, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
-    ModeMsg {fg = black}, -- 'showmode' message (e.g., "-- INSERT -- ")
-    MsgArea {ModeMsg}, -- Area for messages and cmdline
+    ModeMsg {fg = bg1}, -- 'showmode' message (e.g., "-- INSERT -- ")
+    MsgArea {fg = fg1}, -- Area for messages and cmdline
     MsgSeparator {ModeMsg}, -- Separator for scrolled messages, `msgsep` flag of 'display'
     MoreMsg      {fg = green}, -- |more-prompt|
     NonText {fg = gray}, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
